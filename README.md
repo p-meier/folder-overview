@@ -1,5 +1,7 @@
 # Folder Overview
 
+![Preview](docs/preview.png)
+
 Local web dashboard that scans any folder on disk and shows you where the
 space went. Built with [Bun](https://bun.sh/) on the server side and React on
 the client side.
