@@ -1,0 +1,28 @@
+{
+  "name": "folder-overview",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local web dashboard that scans any folder and visualises disk usage by file type, age and sub-folder.",
+  "scripts": {
+    "dev:ui": "vite",
+    "dev:server": "bun run --hot server/index.ts",
+    "dev": "concurrently -k -n ui,server -c cyan,magenta \"bun run dev:ui\" \"bun run dev:server\"",
+    "build": "vite build",
+    "start": "bun run server/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "bun-types": "^1.1.34"
+  }
+}
